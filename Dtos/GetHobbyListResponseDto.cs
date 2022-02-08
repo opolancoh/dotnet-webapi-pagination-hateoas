@@ -1,9 +1,10 @@
-
 using System.Collections.Generic;
+using DotNetWebApiPaginationHateoas.Extensions;
+using DotNetWebApiPaginationHateoas.Interfaces;
 
 namespace DotNetWebApiPaginationHateoas.Dtos
 {
-    public record GetHobbyListResponseDto
+    public record GetHobbyListResponseDto : ILinkedResource
     {
         public int CurrentPage { get; init; }
 
@@ -12,5 +13,7 @@ namespace DotNetWebApiPaginationHateoas.Dtos
         public int TotalPages { get; init; }
 
         public List<GetHobbyResponseDto> Items { get; init; }
+
+        public IDictionary<LinkedResourceType, LinkedResource> Links { get; set; }
     }
 }

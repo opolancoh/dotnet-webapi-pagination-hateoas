@@ -1,11 +1,8 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+// https://vmsdurano.com/asp-net-core-5-implement-web-api-pagination-with-hateoas-links/
+
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
+
 
 namespace DotNetWebApiPaginationHateoas
 {
